@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ChangeTheme from "./ChangeTheme";
 import "../css/header.css";
 
 const Header = () => {
@@ -87,7 +88,7 @@ const Header = () => {
         </div>
 
         <div className="nav__btns">
-          <i className="bx bx-moon change-theme" id="theme-button"></i>
+          <ChangeTheme></ChangeTheme>
 
           <div className="nav__shop" id="cart-shop">
             <i className="bx bx-shopping-bag"></i>
