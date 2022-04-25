@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Featured from "./components/Featured";
 import Story from "./components/Story";
+import Products from "./components/Products";
 
 import "./css/base.css";
 
@@ -14,6 +15,7 @@ function App() {
         <Home></Home>
         <Featured></Featured>
         <Story></Story>
+        <Products></Products>
       </main>
     </div>
   );
