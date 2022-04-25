@@ -9,6 +9,7 @@ import NewArrivals from "./components/NewArrivals";
 import NewsLetter from "./components/NewsLetter";
 import Footer from "./components/Footer";
 import ScrollUp from "./components/ScrollUp";
+import Cart from "./components/Cart";
 import "./css/base.css";
 import "./css/media.css";
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <div>
       <Header></Header>
+      <Cart></Cart>
       <main className="main">
         <Home></Home>
         <Featured></Featured>
