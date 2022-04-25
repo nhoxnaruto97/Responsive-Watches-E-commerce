@@ -5,8 +5,9 @@ import Featured from "./components/Featured";
 import Story from "./components/Story";
 import Products from "./components/Products";
 import Testimonial from "./components/Testimonial";
+import NewArrivals from "./components/NewArrivals";
 import "./css/base.css";
-
+import "./css/media.css";
 function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ function App() {
         <Story></Story>
         <Products></Products>
         <Testimonial></Testimonial>
+        <NewArrivals></NewArrivals>
       </main>
     </div>
   );
