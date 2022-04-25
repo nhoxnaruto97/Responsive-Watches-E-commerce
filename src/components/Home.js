@@ -1,4 +1,5 @@
 import React from "react";
+import pic from "../img/home.png";
 import "../css/home.css";
 import "../css/button.css";
 const Home = () => {
@@ -6,7 +7,7 @@ const Home = () => {
     <section className="home" id="home">
       <div className="home__container container grid">
         <div className="home__img-bg">
-          <img src="../img/home.png" alt="" className="home__img" />
+          <img src={pic} alt="" className="home__img" />
         </div>
 
         <div className="home__social">
