@@ -11,25 +11,13 @@ const Home = () => {
         </div>
 
         <div className="home__social">
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            className="home__social-link"
-          >
+          <a href="https://www.facebook.com/" className="home__social-link">
             Facebook
           </a>
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            className="home__social-link"
-          >
+          <a href="https://twitter.com/" className="home__social-link">
             Twitter
           </a>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            className="home__social-link"
-          >
+          <a href="https://www.instagram.com/" className="home__social-link">
             Instagram
           </a>
         </div>
