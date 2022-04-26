@@ -89,7 +89,11 @@ const Header = () => {
         <div className="nav__btns">
           <i className="bx bx-moon change-theme" id="theme-button"></i>
 
-          <div className="nav__shop" id="cart-shop">
+          <div
+            className="nav__shop"
+            onClick={() => props.setCartShow(!props.cartShow)}
+            id="cart-shop"
+          >
             <i className="bx bx-shopping-bag"></i>
           </div>
 

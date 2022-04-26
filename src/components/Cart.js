@@ -1,28 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import featured1 from "../img/featured1.png";
 import featured3 from "../img/featured3.png";
 import new1 from "../img/new1.png";
 import "../css/cart.css";
 
 const Cart = () => {
-  useEffect(() => {
-    const cart = document.getElementById("cart"),
-      cartShop = document.getElementById("cart-shop"),
-      cartClose = document.getElementById("cart-close");
-    if (cartShop) {
-      cartShop.addEventListener("click", () => {
-        cart.classList.add("show-cart");
-      });
-    }
-    if (cartClose) {
-      cartClose.addEventListener("click", () => {
-        cart.classList.remove("show-cart");
-      });
-    }
-  }, []);
   return (
-    <div className="cart" id="cart">
-      <i className="bx bx-x cart__close" id="cart-close"></i>
+    <div className={`cart ${props.cartShow ? "show-cart" : ""}`} id="cart">
+      <i
+        className="bx bx-x cart__close"
+        onClick={() => props.setCartShow(!props.cartShow)}
+        id="cart-close"
+      ></i>
 
       <h2 className="cart__title-center">My Cart</h2>
 

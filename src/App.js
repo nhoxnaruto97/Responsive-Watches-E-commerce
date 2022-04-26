@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Featured from "./components/Featured";
@@ -14,10 +14,11 @@ import "./css/base.css";
 import "./css/media.css";
 
 function App() {
+  const [cartShow, setCartShow] = useState(false);
   return (
     <div>
-      <Header></Header>
-      <Cart></Cart>
+      <Header cartShow={cartShow} setCartShow={setCartShow}></Header>
+      <Cart cartShow={cartShow} setCartShow={setCartShow}></Cart>
       <main className="main">
         <Home></Home>
         <Featured></Featured>
