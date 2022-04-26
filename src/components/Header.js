@@ -90,7 +90,11 @@ const Header = () => {
         <div className="nav__btns">
           <ChangeTheme></ChangeTheme>
 
-          <div className="nav__shop" id="cart-shop">
+          <div
+            className="nav__shop"
+            onClick={() => props.setCartShow(!props.cartShow)}
+            id="cart-shop"
+          >
             <i className="bx bx-shopping-bag"></i>
           </div>
 
