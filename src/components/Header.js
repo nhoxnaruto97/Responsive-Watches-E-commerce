@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ChangeTheme from "./ChangeTheme";
 import "../css/header.css";
 
-const Header = () => {
+const Header = (props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleLink, setToggleLink] = useState("");
   const [scrollHeader, setScrollHeader] = useState(false);
