@@ -4,7 +4,7 @@ import featured3 from "../img/featured3.png";
 import new1 from "../img/new1.png";
 import "../css/cart.css";
 
-const Cart = () => {
+const Cart = (props) => {
   return (
     <div className={`cart ${props.cartShow ? "show-cart" : ""}`} id="cart">
       <i
